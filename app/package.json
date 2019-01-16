@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env ESLINT=none SOCKET_SERVER=none roadhog dev",
+    "start:no-proxy": "cross-env NO_PROXY=true  SOCKET_SERVER=none ESLINT=none roadhog dev",
+    "build:daily": "rimraf dist && cross-env ESLINT=none PATH_MODE=daily roadhog build",
+    "build:test": "rimraf dist && cross-env ESLINT=none PATH_MODE=test roadhog build"
+  },
+  "dependencies": {
+    "dva": "^2.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "@babel/polyfill": "^7.0.0-beta.36",
+    "@weiyang/web-common": "latest",
+    "dva-model-extend": "^0.1.2",
+    "lodash": "^4.17.4",
+    "antd": "^3.5.4",
+    "antd-extra": "^0.2.0",
+    "moment": "^2.19.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.1",
+    "babel-plugin-dva-hmr": "^0.4.1",
+    "babel-plugin-import": "^1.6.7",
+    "eslint": "^4.14.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "roadhog": "^2.4.0"
+  }
+}
