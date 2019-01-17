@@ -1,0 +1,56 @@
+{
+  "_from": "@weiyang/web-common@latest",
+  "_id": "@weiyang/web-common@1.0.13",
+  "_inBundle": false,
+  "_integrity": "sha512-m5gFF8d35xXi0aWXgpOf+F1YBTWtIduoeNZdxTh7lu0AAn3C9Ww88/JDFxUuYLCVUH9wF8jwGgS2gu2y8dHWUA==",
+  "_location": "/@weiyang/web-common",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@weiyang/web-common@latest",
+    "name": "@weiyang/web-common",
+    "escapedName": "@weiyang%2fweb-common",
+    "scope": "@weiyang",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://10.45.53.135:9100/@weiyang%2fweb-common/-/web-common-1.0.13.tgz",
+  "_shasum": "1cc200835b4d07a0d763a88baf1b019be07f3df7",
+  "_spec": "@weiyang/web-common@latest",
+  "_where": "C:\\Users\\lee\\Desktop\\ModBus-device-front\\ziot-front-quickstart",
+  "author": {
+    "name": "xin"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.10"
+  },
+  "deprecated": false,
+  "description": "> 修改原dva中request工具，可配置请求头信息、特定页面(404、500等)跳转",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@weiyang/web-common",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.ztesoft.com/iot/iot-web-common.git"
+  },
+  "scripts": {
+    "build": "babel src --presets babel-preset-env --out-dir .",
+    "prepublish": "npm run build",
+    "server": "node app.babel.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.13"
+}
